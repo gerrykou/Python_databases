@@ -22,10 +22,10 @@ insertion_query = users.insert().values([
     {'first_name':'Ma','last_name':'Fa', 'email_address':'mf@hplus.com'}
     ])
 
-connection.execute(insertion_query)
+#connection.execute(insertion_query)
 
 
-selection_query = db.select([users.columns.email_address])
+selection_query = db.select([users.columns.email_address, users.columns.last_name] )
 
 
 selection_result = connection.execute(selection_query)
