@@ -1,1 +1,3 @@
 virtualenvironment venv 
+
+mysql -u root -p
